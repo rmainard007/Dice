@@ -1,0 +1,17 @@
+﻿<Window x:Class="Dice.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dice"
+        mc:Ignorable="d"
+        Title="Dice" Height="350" Width="525">
+    <Grid>
+        <TextBlock x:Name="AskForDice" HorizontalAlignment="Left" Height="19" Margin="20,20,0,0" TextWrapping="Wrap" Text="How Many Dice:" VerticalAlignment="Top" Width="95"/>
+        <TextBox x:Name="NumberOfDice" HorizontalAlignment="Left" Height="19" Margin="115,20,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="25" TextChanged="NumberOfDice_TextChanged"/>
+        <Button x:Name="RollBTN" Content="Roll" HorizontalAlignment="Left" Height="19" Margin="161,20,0,0" VerticalAlignment="Top" Width="54" Click="RollBTN_Click"/>
+        <TextBlock x:Name="ResponseIntro" HorizontalAlignment="Left" Height="20" Margin="20,48,0,0" TextWrapping="Wrap" Text="The number(s) rolled are:" VerticalAlignment="Top" Width="134"/>
+        <TextBlock x:Name="response" HorizontalAlignment="Left" Margin="161,48,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="142"/>
+
+    </Grid>
+</Window>
